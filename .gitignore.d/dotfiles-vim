@@ -1,0 +1,8 @@
+*
+**
+**/*
+!/.vim/Makefile
+!/.vimrc
+!/.vim/rc
+!/.vim/rc/**
+!/.gitignore.d/dotfiles-vim
