@@ -34,6 +34,7 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'fisadev/vim-isort'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'heavenshell/vim-pydocstring'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
