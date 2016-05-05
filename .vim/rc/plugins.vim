@@ -111,3 +111,4 @@ map <leader>f <Plug>(easymotion-s)
 autocmd FileType python map <buffer> <leader>b :w \| :call Autopep8()<CR>
 autocmd FileType python map <leader>s :w \| :Isort <CR>
 noremap <leader>e :SyntasticReset \| SyntasticCheck \| :Errors <CR>
+noremap <silent> <leader>l <Plug>(pydocstring)
