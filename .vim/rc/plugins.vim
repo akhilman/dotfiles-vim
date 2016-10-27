@@ -29,8 +29,10 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'michaeljsmith/vim-indent-object'
 
+" completion
+Plugin 'Valloric/YouCompleteMe'
+
 " python 
-Plugin 'davidhalter/jedi-vim'
 Plugin 'tell-k/vim-autopep8'
 Plugin 'fisadev/vim-isort'
 Plugin 'hynek/vim-python-pep8-indent'
@@ -38,9 +40,6 @@ Plugin 'heavenshell/vim-pydocstring'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
-
-" закрывает окно документации при autocompletion
-" autocmd CompleteDone * pclose
 
 
 """"
@@ -62,14 +61,10 @@ let g:ctrlp_working_path_mode = 'wa'
 let g:ctrlp_cutom_ignore = { 'dir':  '\v[\/](\.git|\.hg|\.svn|__pycache__)$', 'file': '\v\.(exe|so|dll)$' }
 
 
-
 """
-" jedi
-""
-autocmd FileType python setlocal completeopt-=preview
-let g:jedi#popup_on_dot = 0
-
-autocmd FileType python setlocal foldmethod=indent
+" YouCompleteMe
+"""
+let g:ycm_add_preview_to_completeopt = 1
 
 
 """
@@ -112,3 +107,13 @@ autocmd FileType python map <buffer> <leader>b :w \| :call Autopep8()<CR>
 autocmd FileType python map <leader>s :w \| :Isort <CR>
 noremap <leader>e :SyntasticReset \| SyntasticCheck \| :Errors <CR>
 noremap <silent> <leader>l <Plug>(pydocstring)
+noremap <silent> <leader>g :YcmComplete GoTo <CR>
+noremap <silent> <leader>G :YcmComplete GoToReferences <CR>
+
+
+"""
+" stuff
+"""
+autocmd FileType python setlocal foldmethod=indent
+" закрывает окно документации при autocompletion
+" autocmd CompleteDone * pclose
