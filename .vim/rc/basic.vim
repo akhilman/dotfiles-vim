@@ -24,7 +24,7 @@ if has("gui_running")
     highlight Pmenu guibg=#000000 guifg=#999999 gui=bold
     highlight PmenuSel guibg=#0000aa guifg=#ffffff gui=bold
     set lines=30 columns=86
-    set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 13
+    set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12
 else
     colors elflord
     highlight Pmenu ctermfg=gray ctermbg=0
