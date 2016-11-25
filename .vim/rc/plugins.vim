@@ -37,6 +37,8 @@ Plugin 'tell-k/vim-autopep8'
 Plugin 'fisadev/vim-isort'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'heavenshell/vim-pydocstring'
+"Plugin 'vim-scripts/pydoc.vim'
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -65,6 +67,15 @@ let g:ctrlp_cutom_ignore = { 'dir':  '\v[\/](\.git|\.hg|\.svn|__pycache__)$', 'f
 " YouCompleteMe
 """
 let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_python_binary_path = 'python'
+
+
+"""
+" jedi-vim
+"""
+let g:jedi#completions_enabled = 1
+let g:jedi#popup_on_dot = 0
+" autocmd FileType python setlocal completeopt-=preview
 
 
 """
