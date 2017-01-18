@@ -29,11 +29,12 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'dag/vim-fish'
 
 " completion
 Plugin 'Valloric/YouCompleteMe'
 
-" python 
+" python
 Plugin 'tell-k/vim-autopep8'
 Plugin 'fisadev/vim-isort'
 Plugin 'hynek/vim-python-pep8-indent'
