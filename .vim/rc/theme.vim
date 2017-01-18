@@ -1,6 +1,7 @@
 """
 " powerline
 ""
+if has("python3")
 python3 << EOF
 try:
     from powerline.vim import setup as powerline_setup
@@ -12,6 +13,7 @@ else:
     vim.command("set laststatus=2")
     vim.command("set t_Co=256")
 EOF
+endif
 
 
 """
