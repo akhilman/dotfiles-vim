@@ -3,38 +3,16 @@
 syntax on
 filetype plugin indent on
 let c_minlines=500  " number of lines that vim goes backwards for syntax highlight
-set smartindent
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
-set expandtab "заменяет TAB на пробелы
+set tabstop=4 " show existing tab with 4 spaces width
+set shiftwidth=4 " when indenting with '>', use 4 spaces width
+set expandtab " On pressing tab, insert 4 spaces
 set wrap nolist linebreak breakat=\ 
 set modeline
 set backspace=2
 set scrolloff=10 " показывать всегда 10 строк до и после курсора
 
-if has("gui_running")
-    " disabling garbage in gvim
-    set guioptions-=m  "remove menu bar
-    set guioptions-=T  "remove toolbar
-    set guioptions-=r  "remove right-hand scroll bar
-    set guioptions-=L  "remove left-hand scroll bar
-
-    colors evening
-    highlight Pmenu guibg=#000000 guifg=#999999 gui=bold
-    highlight PmenuSel guibg=#0000aa guifg=#ffffff gui=bold
-    set lines=30 columns=86
-    set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12
-else
-    colors elflord
-    highlight Pmenu ctermfg=gray ctermbg=0
-    highlight PmenuSel ctermfg=white ctermbg=blue
-endif
-
-
-"line number
-set number
-highlight LineNr ctermfg=gray guifg=gray
+" setting shell to bash to make all work again when started from fish
+set shell=/bin/bash
 
 " moving indentation
 vnoremap < <gv

@@ -22,11 +22,12 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'majutsushi/tagbar'
 "Plugin 'vim-scripts/vcscommand.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'bling/vim-airline'
+"Plugin 'bling/vim-airline'
 Plugin 'xolox/vim-misc' " required for vim-session
 Plugin 'xolox/vim-session'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'michaeljsmith/vim-indent-object'
 
 " completion
@@ -82,14 +83,14 @@ let g:jedi#popup_on_dot = 0
 " airline
 ""
 "let g:airline_theme='powerlineish'
-set noshowmode
-set laststatus=2
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#whitespace#enabled = 1
-"let g:airline#extensions#whitespace#symbol = '!'
-if has("gui_running")
-	let g:airline_powerline_fonts = 1
-endif
+"set noshowmode
+"set laststatus=2
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#whitespace#enabled = 1
+""let g:airline#extensions#whitespace#symbol = '!'
+"if has("gui_running")
+"	let g:airline_powerline_fonts = 1
+"endif
 
 
 """
