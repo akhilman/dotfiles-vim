@@ -1,7 +1,7 @@
 """
 " powerline
 ""
-if has("python3")
+if has("python3") && $COLORTERM == "truecolor"
 python3 << EOF
 try:
     from powerline.vim import setup as powerline_setup
