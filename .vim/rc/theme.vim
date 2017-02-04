@@ -33,7 +33,7 @@ if has("gui_running")
     set lines=30 columns=86
     set guifont=Liberation\ Mono\ for\ Powerline\ 12
 else
-    colors ron
+    colors torte
     highlight Pmenu ctermfg=gray ctermbg=0
     highlight PmenuSel ctermfg=white ctermbg=blue
     highlight Visual term=reverse cterm=reverse guibg=Grey
