@@ -43,7 +43,7 @@ noremap <leader>] :bnext<CR>
 noremap <leader>[ :bprevious<CR>
 noremap <leader>q :bp<BAR> bd #<CR>
 noremap <leader>p :ls<CR>:b
-noremap <leader><S-p> :b#<CR>
+noremap <leader><Tab> :b#<CR>
 noremap <leader>w :w<CR>
 
 " splits
