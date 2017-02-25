@@ -30,6 +30,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'dag/vim-fish'
+Plugin 'vimwiki/vimwiki'
 
 " completion
 Plugin 'Valloric/YouCompleteMe'
@@ -102,6 +103,11 @@ let g:session_autoload = 'yes'
 let g:session_autosave_periodic = 'yes'
 let g:session_persist_colors = 0
 let sessionoptions = 'buffers,curdir,folds,help,tabpages,winpos,winsize,resize'
+
+"""
+" VimWiki
+""
+let g:vimwiki_list = [{'path': '~/Documents/notes/', 'path_html': '~/Documents/notes.html'}]
 
 """
 " Autopep8
