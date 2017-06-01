@@ -32,7 +32,7 @@ Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'dag/vim-fish'
 
 " completion
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 
 " python
 Plugin 'tell-k/vim-autopep8'
@@ -40,7 +40,8 @@ Plugin 'fisadev/vim-isort'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'heavenshell/vim-pydocstring'
 "Plugin 'vim-scripts/pydoc.vim'
-Plugin 'davidhalter/jedi-vim'
+"Plugin 'davidhalter/jedi-vim'
+Plugin 'jmcantrell/vim-virtualenv'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -75,7 +76,7 @@ let g:ycm_python_binary_path = 'python'
 """
 " jedi-vim
 """
-let g:jedi#completions_enabled = 1
+let g:jedi#completions_enabled = 0
 let g:jedi#popup_on_dot = 0
 " autocmd FileType python setlocal completeopt-=preview
 
@@ -119,7 +120,7 @@ map <leader>f <Plug>(easymotion-s)
 autocmd FileType python map <buffer> <leader>b :w \| :call Autopep8()<CR>
 autocmd FileType python map <leader>s :w \| :Isort <CR>
 noremap <leader>e :SyntasticReset \| SyntasticCheck \| :Errors <CR>
-noremap <silent> <leader>l <Plug>(pydocstring)
+noremap <silent> <leader>l <Plug>(Pydocstring)
 noremap <silent> <leader>g :YcmComplete GoTo <CR>
 noremap <silent> <leader>G :YcmComplete GoToReferences <CR>
 

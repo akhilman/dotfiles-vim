@@ -46,16 +46,6 @@ noremap <leader>p :ls<CR>:b
 noremap <leader><Tab> :b#<CR>
 noremap <leader>w :w<CR>
 
-" splits
-nnoremap <silent> <A-j> :resize -1<CR>
-nnoremap <silent> <A-k> :resize +1<CR>
-nnoremap <silent> <A-l> :vertical resize +1<CR>
-nnoremap <silent> <A-h> :vertical resize -1<CR>
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
-
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
 
